@@ -1,0 +1,10 @@
+<section id="flagbuttons">
+	<%= image_tag('alt_logo.png', {:class=>"alt_logo"} ) %>
+	<p>
+		<%= link_to(image_tag('signal_safetycomm.png',:border=>0 ), {:action=>'safetycomm'}, {:title=>"Safety to Communicator Signals"}) %>
+		<%= link_to(image_tag('signal_captflag.png',:border=>0 ), {:action=>'captflagger'}, {:title=>"Signals from Captain to Flagger"}) %>
+		<%= link_to(image_tag('signal_numbers.png',:border=>0 ), {:action=>'numbersignals'}, {:title=>"Signals for Car Number"}) %>
+		<%= link_to(image_tag('signal_colors.png',:border=>0 ), {:action=>'colorsignals'}, {:title=>"Signals for Car Color"}) %>
+		<%= link_to(image_tag('signal_general.png',:border=>0 ), {:action=>'generalsignals'}, {:title=>"Other Hand Signals"}) %>
+	</p>
+</section>

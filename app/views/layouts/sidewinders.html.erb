@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<%= stylesheet_link_tag(@css) %>
+		<meta name="generator" content="TextMate http://macromates.com/"/>
+		<meta name="author" content="Ed Shuler"/>
+		<title><%= @title %></title>
+		<%= javascript_include_tag :all, :cache => true %>
+		
+		<!--[if lt IE 9]> 
+			<script type="text/javascript">
+				document.createElement("nav" ); 
+				document.createElement("header" ); 
+				document.createElement("footer" ); 
+				document.createElement("section" ); 
+				document.createElement("aside" ); 
+				document.createElement("article" );
+			</script>
+		<![endif]-->
+		</head>
+	<body>
+		<%= yield %>
+	</body>
+</html>

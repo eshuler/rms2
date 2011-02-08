@@ -1,0 +1,19 @@
+<%= render(:partial => 'header') -%>
+
+<%= render(:partial => 'mainlogo') -%>
+
+<section id="homepage">
+	<p>
+		<%= link_to(image_tag('flagger.png',:border=>0, :class=>'wide1'), {:action=>'flagging'}, {:title=>"Flagging"}) %>
+		<%= link_to(image_tag('communicator.png',:border=>0, :class=>'wide2'), {:action=>'comm'}, {:title=>"Communication"}) %>
+		<%= link_to(image_tag('coverage.png',:border=>0, :class=>'wide3'), {:action=>'coverage'}, {:title=>"Track Coverage"}) %>
+		<%= link_to(image_tag('signals.png',:border=>0, :class=>'wide2'), {:action=>'signals'}, {:title=>"Hand Signals"}) %>
+	</p>
+</section>
+
+<section id="nextup">
+	<p>Next event : [next event in XX Days XX Hrs XX Min XX Sec]</p>
+</section>
+
+
+<%= render(:partial => 'footer')-%>
