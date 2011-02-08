@@ -1,0 +1,167 @@
+/*********************/
+/* css for rmsweb v2 */
+/*********************/
+* {
+	margin:0px;
+	padding:0px;
+	color:#FFF;
+	font-family:"trebuchet ms", verdana, sans-serif;
+	font-size:10pt;
+	background:transparent;
+}
+
+body {
+	width:1024px;
+	height:768px;
+	margin:10px;
+	border:5px solid orange;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	background-image: url('../images/fibre_red.jpg');
+}
+
+p, li,a, h1{ 
+	line-height:20px;
+	color:orange;
+	text-align:center;
+}
+
+header#page_header p {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+header#page_header nav ul, #page_footer nav ul {
+	display: block;
+	list-style: none;
+	width:100%;
+	text-align: center;
+	padding: 0;
+} 
+
+header#page_header nav ul li, footer#page_footer nav ul li {
+	padding:0; 
+	margin: 0 20px 0 0;
+	display:inline;
+}
+
+section#homepage {
+	display:block;
+	height:420px;
+	/*border:1px solid white;*/
+}
+
+section#homepage img.wide1 {
+	margin-top:55px;
+	margin-right:35px;
+	margin-bottom:0px;
+	margin-left:40px;
+	border:none;
+}
+
+section#homepage img.wide2 {
+	margin-top:55px;
+	margin-right:35px;
+	margin-bottom:0px;
+	margin-left:0px;
+	border:none;
+}
+
+section#homepage img.wide3 {
+	margin-top:55px;
+	margin-right:25px;
+	margin-bottom:0px;
+	margin-left:0;
+	border:none;
+}
+
+section#aboutpage {
+	overflow:auto;
+	position:relative;
+	width:90%;
+	height:490px;
+	color:#000;
+	margin-left:40px;
+	border:2px solid orange;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	background:#FFF;
+	padding:15px;
+}
+
+section#aboutpage li {
+	margin-left:15px;
+	background:inherit;
+	text-align:left;
+	color:#000;
+}
+
+section#aboutpage a {
+	color:#000;
+	font-size:8pt;
+}
+
+section#nextup p{
+	display:block;
+	width:90%;
+	height:30px;
+	color:#000;
+	font-size:16pt;
+	background:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:36px;
+	border:2px solid orange;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	padding:15px;
+}
+
+.headline {
+	color:#000;
+	font-size:10pt;
+}
+
+.drawbox {
+	border:3px solid red;
+	color:#000;
+	text-align:center;
+	font-size:14pt;
+}
+
+.basictext {
+	color:#000;
+	font-size:10pt;
+}
+
+.strongtext {
+	color:#000;
+	font-weight:bold;
+	font-size:10pt;
+}
+
+.citation {
+	color:#000;
+	font-size:8pt;
+}
+
+.linecenter {
+	color:#000;
+	text-align:center;
+	font-size:12pt;
+}
+
+footer#page_footer { 
+	clear: both; 
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+/*#tooltip {
+	padding: 5px 10px;
+	border: 1px solid #b2bdc3;
+	border-radius:10px;
+	-moz-border-radius:10px;
+}*/

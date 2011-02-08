@@ -1,0 +1,89 @@
+/*********************/
+/* css for rmsweb v2 */
+/*********************/
+* {
+	margin:0px;
+	padding:0px;
+	color:#FFF;
+	font-family:"trebuchet ms", verdana, sans-serif;
+	font-size:10pt;
+	background:transparent;
+}
+
+body {
+	width:1024px;
+	height:768px;
+	margin:10px;
+	border:5px solid orange;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	background-image: url('../images/fibre_carbon.jpg');
+}
+
+/***********************************/
+/* rules for the header and footer */
+/***********************************/
+header#page_header p {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+header#page_header nav ul, #page_footer nav ul {
+	display: block;
+	list-style: none;
+	width:100%;
+	text-align: center;
+	padding: 0;
+} 
+
+header#page_header nav ul li, footer#page_footer nav ul li {
+	padding:0; 
+	margin: 0 20px 0 0;
+	display:inline;
+}
+
+p, li, a{ 
+	line-height:20px;
+	color:orange;
+	text-align:center;
+}
+
+/*************************/
+/* rules for the section */
+/*************************/
+
+section#info {
+	display:block;
+	overflow:auto;
+	position:relative;
+	width:90%;
+	height:486px;
+	color:#000;
+	margin-left:40px;
+	border:2px solid orange;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	background:#FFF;
+	padding:15px;
+}
+
+section#info li {
+	margin-left:15px;
+	background:inherit;
+	font-size:8pt;
+	line-height:15px;
+	text-align:left;
+	color:#000;
+}
+
+section#info a {
+	color:#000;
+	font-size:10pt;
+}
+
+b {
+	color:#000;
+	font-weight:bold;
+	font-size:10pt;
+}

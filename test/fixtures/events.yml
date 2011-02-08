@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  evdate: 2011-02-07
+  evhostreg: MyText
+  evname: MyText
+  evtype: MyText
+  evtrack: MyText
+  evchief: MyText
+
+two:
+  evdate: 2011-02-07
+  evhostreg: MyText
+  evname: MyText
+  evtype: MyText
+  evtrack: MyText
+  evchief: MyText
