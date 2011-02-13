@@ -12,8 +12,14 @@
 </section>
 
 <section id="nextup">
-	<p>Next event : [next event in XX Days XX Hrs XX Min XX Sec]</p>
+	<p>
+		<span id="weather"><%= link_to (image_tag('sun_therm.png', {:size => "40x40", :border=>0}), :action => 'weather', :popup => ['Weather', 'height=300, width=200']) %></span>
+		<span id="eventname"><%= h @next_event.evname %> <span class="basictext">begins in:</span></span>
+		<span id="clock1"> test </span>
+	</p>
+	<script type="text/javascript">
+	  Duration.countdown("clock1",Date.UTC(<%= @utc_date %>));
+	</script>
 </section>
-
 
 <%= render(:partial => 'footer')-%>

@@ -3,55 +3,34 @@
 <%= render(:partial => 'mainlogo') -%>
 
 <section id="info">
-	
 	<!-- create a box to hold the countdown info -->
 	<div id="countdowncontainer">
-		<div id="event"> </div>
+		<div id="event"><%= @next_event.evname %> begins in:</div>
 		<div id="clock1" class="digits"> </div>
-	</div> <!-- end of coutdowncontainer -->
+	</div>
+	<script type="text/javascript">
+	  Duration.countdown("clock1",Date.UTC(<%= @utc_date %>));
+	</script>
 	
 	<!-- create a box to hold the schedule -->
 	<div id="tablebox">
 		<table id="schedtable" >
-			<caption>Schedule of racing events in the RMDiv of the SCCA for 2011 (subject to change)</caption>
+			<caption>Schedule of racing events in the RMDiv of the SCCA for 2011</caption>
 			<tr>
 				<th>Date</th><th>Host</th><th>Event Name</th><th>Event Type</th><th>Location</th><th>Flag Chief</th>
 			</tr>
-			<tr>
-				<td>3/19/2011</td><td>CDR</td><td>Crash &amp; Burn School</td><td>F&amp;C Training</td><td>PPIR</td><td> NA </td>
-			</tr>
-			<tr>
-				<td class="odd">4/9/2011</td><td class="odd">CDR</td><td class="odd">2 Cool Schools</td><td class="odd">Dbl DriverSchool</td><td class="odd">LaJunta Raceway</td><td class="odd">C. Hopkins &amp; J. Torpy</td>
-			</tr>
-			<tr>
-				<td>4/30/2011</td><td>COR</td><td>May Daze</td><td>Dbl Regional/CTT/PDX</td><td>High Plains Raceway</td><td> D. Ruegesegger</td>
-			</tr>
-			<tr>
-				<td class="odd">5/28/2011</td><td class="odd">CDR</td><td class="odd">Rock the Peak</td><td class="odd">Dbl Rational</td><td class="odd">Pikes Peak Int Raceway</td><td class="odd">V. &amp; S. Kuklin</td>
-			</tr>
-			<tr>
-				<td>6/18/2011</td><td>RGR</td><td>Western Sprints</td><td>Dbl Regional</td><td>Sandia</td><td>-TBD-</td>
-			</tr>
-			<tr>
-				<td class="odd">7/2/2011</td><td class="odd">COR</td><td class="odd">The Freedom Sprints **</td><td class="odd">Dbl National</td><td class="odd">High Plains Raceway</td><td class="odd">D. &amp; D. Hegeman</td>
-			</tr>
-			<tr>
-				<td>7/23/2011</td><td>CDR</td><td>-TBD-</td><td>Dbl Regional</td><td>Pueblo Motorsports Park</td><td>C. Hopkins</td>
-			</tr>
-			<tr>
-				<td class="odd">8/6/2011</td><td class="odd">Utah</td><td class="odd">The Great Salt Race</td><td class="odd">Dbl Rational</td><td class="odd">Miller Motorsports Park</td><td class="odd">-TBD-</td>
-			</tr>
-			<tr>
-				<td>9/3/2011</td><td>COR</td><td>Last Chance Rationals</td><td>Dbl Rational</td><td>High Plains Raceway</td><td>E. Shuler</td>
-			</tr>
-			<tr>
-				<td class="odd">9/19/2011</td><td class="odd">SCCA</td><td class="odd">SCCA Runoffs</td><td class="odd">National Championships</td><td class="odd">Road America</td><td class="odd"> SCCA </td>
-			</tr>
-			<tr>
-				<td>10/22/2011</td><td>COR</td><td>The Oct-Duro</td><td>Reg/Enduro</td><td>High Plains Raceway</td><td>-TBD-</td>
-			</tr>
+			<% @events.each do |event| -%>
+				<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+					<td><%= h event.evdate.strftime("%m/%d/%Y 07:00 AM") %></td>
+					<td><%= h event.evhostreg %></td>
+					<td><%= h event.evname %></td>
+					<td><%= h event.evtype %></td>
+					<td><%= h event.evtrack %></td>
+					<td><%= h event.evchief %></td>
+				</tr>
+			<% end %>
 		</table>
-	</div> <!-- bodytable -->
+	</div> <!-- tablebox -->
 	<div id="abbreviations">
 		CDR - Continental Divide Region (Colorado Springs area)<br/>
 		COR - Colorado Region (Denver area)<br/>
@@ -60,82 +39,6 @@
 		** - Super Tour event!
 	</div>
 	
-	
 </section>
 
 <%= render(:partial => 'footer') -%>
-
-<!-- put page load javascript here so it runs after page is loaded -->
-<script type="text/javascript">
-<!-- hide the script from the validator
-	/*
-		Author:				Robert Hashemian (http://www.hashemian.com/)
-		Modified by:	Munsifali Rashid (http://www.munit.co.uk/)
-		Modified by:	Tilesh Khatri
-		Modified by:	Ed Shuler
-	*/
-
-	// get the next race date by examining the dates and ignoring those that have already expired
-	var today=new Date();
-	var thenextracedate=new Date();
-	var i=1;
-	while(i<10)
-	{
-		var rdates=document.getElementById('schedtable').rows[i].cells;
-		var racedate=new Date(rdates[0].innerHTML);
-		var ename=rdates[2].innerHTML;
-		if(today<racedate )
-		{
-			thenextracedate=racedate;
-			i=11;
-		}
-		i++;
-	}
-	
-	// display the countdown timer
-	
-	StartCountDown("clock1",thenextracedate)
-
-	function StartCountDown(myDiv,myTargetDate)
-	{
-	  var dthen	= new Date(myTargetDate);
-	  var dnow	= new Date();
-	  ddiff		= new Date(dthen-dnow);
-	  gsecs		= Math.floor(ddiff.valueOf()/1000);
-	  CountBack(myDiv,gsecs);
-	}
-
-	function Calcage(secs, num1, num2)
-	{
-	  s = ((Math.floor(secs/num1))%num2).toString();
-	  if (s.length < 2) 
-	  {	
-	    s = "0" + s;
-	  }
-	  return (s);
-	}
-
-	function CountBack(myDiv, secs)
-	{
-		var eventname = ""
-	  var DisplayStr;
-	  var DisplayFormat = "%%D%% Days %%H%%:%%M%%:%%S%%";
-	  DisplayStr = DisplayFormat.replace(/%%D%%/g,	Calcage(secs,86400,100000));
-	  DisplayStr = DisplayStr.replace(/%%H%%/g,		Calcage(secs,3600,24));
-	  DisplayStr = DisplayStr.replace(/%%M%%/g,		Calcage(secs,60,60));
-	  DisplayStr = DisplayStr.replace(/%%S%%/g,		Calcage(secs,1,60));
-	  if(secs > 0)
-	  {	
-			document.getElementById("event").innerHTML = ename + " starts in:";
-			document.getElementById(myDiv).innerHTML = DisplayStr;
-			setTimeout("CountBack('" + myDiv + "'," + (secs-1) + ");", 990);
-	  }
-	  else
-	  {
-		// if no date is valid, display this message.
-	    document.getElementById(myDiv).innerHTML = "See you at the track!";
-	  }
-	}
-	// end of comments -->
-</script>
-

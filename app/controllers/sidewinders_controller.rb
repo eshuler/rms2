@@ -6,6 +6,8 @@ class SidewindersController < ApplicationController
   def index
     @title = 'RMSidewinders v2.0'
     @css = 'sidewinder.css'
+    @next_event = Event.find_next_event
+    @utc_date = Event.next_utc_date
   end
   
   ##############################
@@ -32,6 +34,11 @@ class SidewindersController < ApplicationController
     @css = 'signals.css'
   end
   
+  def media
+    @title = 'Media'
+    @css = 'carbon.css'
+  end
+
   def about
     @title = 'About the RMSidewinders'
     @css = 'green.css'
@@ -40,6 +47,9 @@ class SidewindersController < ApplicationController
   def schedule
     @title = 'Let''s Go Racing!'
     @css = 'green.css'
+    @events = Event.find_all_events
+    @next_event = Event.find_next_event
+    @utc_date = Event.next_utc_date
   end
   
   def organize
@@ -68,6 +78,11 @@ class SidewindersController < ApplicationController
 
   def yellow
     @title = 'Yellow Flag'
+    @css = 'flags.css'
+  end
+
+  def surface
+    @title = 'Surface Flag'
     @css = 'flags.css'
   end
 
@@ -151,5 +166,13 @@ class SidewindersController < ApplicationController
     @title = 'Hand Signals'
     @css = 'signals.css'
   end
-    
+  
+  def images
+  end
+  
+  def weather
+    @title = 'Weather'
+    @css = 'red.css'
+  end
+
 end

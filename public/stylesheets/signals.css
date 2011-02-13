@@ -17,7 +17,7 @@ body {
 	border:5px solid orange;
 	border-radius:15px;
 	-moz-border-radius:15px;
-	background-image: url('../images/fibre_carbon.jpg');
+	background-image: url('../images/fibre_red.jpg');
 }
 
 /***********************************/
@@ -66,6 +66,8 @@ p, li, a{
 	color:#000;
 	font-family:"trebuchet ms", verdana, sans-serif;
 }
+
+
 /******************************/
 /* rules for the flag buttons */
 /******************************/

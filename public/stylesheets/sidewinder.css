@@ -104,18 +104,35 @@ section#aboutpage a {
 
 section#nextup p{
 	display:block;
-	width:90%;
-	height:30px;
+	width:78%;
+	height:25px;
 	color:#000;
 	font-size:16pt;
 	background:#FFF;
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom:36px;
+	margin-bottom:41px;
 	border:2px solid orange;
 	border-radius:10px;
 	-moz-border-radius:10px;
 	padding:15px;
+}
+
+#eventname {
+	position:relative;
+	color:#000;
+	font-size:16pt;
+}
+
+#clock1 {
+	color:#000;
+	margin-top:15px;
+	font-size:16pt;
+}
+
+#weather {
+	margin-top:-5px;
+	float:left;
 }
 
 .headline {

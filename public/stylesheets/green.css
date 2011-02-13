@@ -99,7 +99,7 @@ b {
 
 #event {
 	padding:1px;
-	font-size:16pt;
+	font-size:20pt;
 	text-align:center;
 	background:#FFF;
 	color:#000;
@@ -108,6 +108,7 @@ b {
 #clock1{
 	padding:1px;
 	margin-top:5px;
+	font-size:18pt;
 	text-align:center;
 	background:#FFF;
 	color:#000;
@@ -138,21 +139,30 @@ b {
 	border-left:1px solid #F9BB3A;
 	border-right:1px solid #F9BB3A;
 	border-bottom:1px solid #F9BB3A;
-	font-size:medium;
+	font-size:10pt;
 	background-image: url('../images/greenbar.png');
 	color:#F9BB3A;
 }
 
 #schedtable td {
 	padding:2px;
-	background:#FFF;
 	text-align:center;
+	font-size:10pt;
 	border:1px solid black;
 	color:#000;
 }
 
-#schedtable td.odd {
-	background:#BBB;
+caption {
+	color:#000;
+}
+
+/* Zebra stripe the table */
+#schedtable  .list-line-even {
+  background:#EEE;
+}
+
+#schedtable .list-line-odd {
+  background:#AAA;
 }
 
 /* ----------------------------------- */

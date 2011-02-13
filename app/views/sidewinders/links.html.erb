@@ -5,37 +5,42 @@
 <section id="info">
 
 <b>Sports car racing clubs</b> in the rocky mountains, i.e. clubs that host wheel-to-wheel racing events:<br/>
-SCCA - <a href="http://www.coloradoscca.org" target="_blank">Colorado Region</a>, - <a href="http://www.scca-cdr.org/" target="_blank">Continental Divide Region</a>, - 
-<a href="http://www.utahscca.com/" target="_blank">Utah Region</a>,- 
-<a href="http://www.rgrscca.com/" target="_blank">Rio Grande Region</a><br/>
-RMVR - <a href="http://rmvr.com/" target="_blank">Rocky Mountain Vintage Racing</a><br/>
-MRA - <a href="http://www.mra-racing.org/" target="_blank">Motorcycle Roadracing Association</a><br/>
-PCA - Porsche Club of America - <a href="http://www.rmrporscheclub.com/" target="_blank"> Rocky Mountain Region</a><br/><br/>
+	SCCA - <%= link_to "Colorado Region", "http://www.coloradoscca.org", :target => '_blank' %>
+	 - <%= link_to "Continental Divide Region", href="http://www.scca-cdr.org/", :target => '_blank' %>
+	 - <%= link_to "Utah Region","http://www.utahscca.com/", :target => '_blank' %>
+	 - <%= link_to "Rio Grande Region", "http://www.rgrscca.com/", :target => '_blank' %><br/>
+	
+RMVR - <%= link_to "Rocky Mountain Vintage Racing","http://rmvr.com/", :target => '_blank' %><br/>
+
+MRA - <%= link_to "Motorcycle Roadracing Association","http://www.mra-racing.org/", :target => '_blank' %><br/>
+
+PCA - <%= link_to "Porsche Club of America, Rocky Mountain Region", "http://www.rmrporscheclub.com/", :target => '_blank' %><br/><br/>
+
 <b>Social</b> car clubs in the rocky mountains:<br/>
 <ul>
-	<li><a href="http://www.alfacluboftherockies.com/" target="_blank">The Alfa Romeo Club of Colorado</a></li>
-	<li><a href="http://www.audiclubrmc.org/" target="_blank">Audi Club</a></li>
-	<li><a href="http://www.rmcbmwcca.org/" target="_blank">BMW Car Club of America, Rocky Mountain Chapter</a></li>
-	<li>Colorado Exotic Car Association (CECA) consisting of <a href="http://www.coloradopantera.com/" target="_blank">Pantera</a> - 
-		<a href="http://www.milehicobraclub.com/" target="_blank">Cobra</a> - 
-		<a href="http://www.fcarmr.com/" target="_blank">Ferrari</a>, and 
-		<a href="http://www.lamborghiniclubamerica.com/index.php?option=com_sobi2&amp;sobi2Task=sobi2Details&amp;catid=1&amp;sobi2Id=16&amp;Itemid=60" target="_blank">
-			Lamborghini</a> clubs</li>
-	<li><a href="http://www.lotuscolorado.com/" target="_blank">Lotus Colorado</a></li>
-	<li><a href="http://www.milehighmbca.org/" target="_blank">Mercedes Benz Club of America, Mile-High Section</a></li>
-	<li><a href="http://www.co-vca.com/" target="_blank">Viper Club, Colorado Region</a></li>
-	<li><a href="http://www.zccc.org/" target="_blank">The Z-Car Club of Colorado</a></li>
+	<li><%= link_to "The Alfa Romeo Club of Colorado", "http://www.alfacluboftherockies.com/", :target => '_blank' %></li>
+	<li><%= link_to "Audi Club", "http://www.audiclubrmc.org/", :target => '_blank' %> </li>
+	<li><%= link_to "BMW Car Club of America,  Rocky Mountain Chapter", "http://www.rmcbmwcca.org", :target => '_blank' %></li>
+	<li>Colorado Exotic Car Association (CECA) consisting of <%= link_to "Pantera", "http://www.coloradopantera.com", :target => '_blank' %>
+		 - <%= link_to "Cobra", "http://www.milehicobraclub.com", :target => '_blank' %>
+		 - <%= link_to "Ferrari", "http://www.fcarmr.com" %>
+		 and <%= link_to "Lamborghini", "http://www.lamborghiniclubamerica.com/index.php?option=com_sobi2&amp;sobi2Task=sobi2Details&amp;catid=1&amp;sobi2Id=16&amp;Itemid=60", :target => '_blank' %> clubs</li>
+	<li><%= link_to "Lotus Colorado", "http://www.lotuscolorado.com", :target => '_blank' %></li>
+	<li><%= link_to "Mercedes Benz Club of America, Mile-High Section", "http://www.milehighmbca.org", :target => '_blank' %></li>
+	<li><%= link_to "Viper Club, Colorado Region", "http://www.co-vca.com", :target => '_blank' %></li>
+	<li><%= link_to "The Z-Car Club of Colorado", "http://www.zccc.org", :target => '_blank' %></li>
 </ul><br/>
 
 <b>Other organizations</b> referenced on this web site:<br/><br/>
-<a href="http://www.fia.com/en-GB/Pages/HomePage.aspx" target="_blank">FIA</a> - <b>Federation Internationale de l'Automobile.</b>
+<%= link_to "FIA", "http://www.fia.com/en-GB/Pages/HomePage.aspx", :target => '_blank' %> - <b>Federation Internationale de l'Automobile.</b>
 		The sanctioning body for Formula 1 and other international auto racing series.<br/>
-<a href="http://www.nascar.com/" target="_blank">NASCAR</a> - <b>The National Association for Stock Car Auto Racing</b>.&nbsp;&nbsp;
+<%= link_to "NASCAR", "http://www.nascar.com", :target => '_blank' %> - <b>The National Association for Stock Car Auto Racing</b>.&nbsp;&nbsp;
 The three largest racing series sanctioned by NASCAR are the S<b>print Cup Series</b>, the <b>Nationwide Series</b>, and the <b>Camping World Truck Series</b>.&nbsp;&nbsp;It also oversees NASCAR local racing, the <b>Whelen Modified Tour</b>, the <b>Whelen All-American Series</b>, and the <b>NASCAR iRacing.com Series</b>.&nbsp;&nbsp;
 NASCAR sanctions over 1500 races at over 100 tracks in 39 states, and Canada.&nbsp;&nbsp;NASCAR has presented exhibition races in Suzuka City, Japan, Motegi City, Japan, Mexico, and Melbourne, Australia.<br/>
-<a href="http://www.indycar.com/" target="_blank">IRL</a> - <b>Indy Racing League</b> is the sanctioning body for the IZOD IndyCar Series as well as Firestone Indy Lights and the U.S. F2000 Series.<br/>
+<%= link_to "IRL", "http://www.indycar.com", :target => '_blank' %> - <b>Indy Racing League</b> is the sanctioning body for the IZOD IndyCar Series as well as Firestone Indy Lights and the U.S. F2000 Series.<br/>
 <b>NOTE:</b>The Indianapolis 500 is sanctioned by the <b>United States Auto Club</b> (USAC).<br/><br/>
-If you would like to add a link to your club here,  email: <a href="mailto:RMSidewinder@me.com">RMSidewinder</a>
+If you would like to add a link to your club here,  email: <%= mail_to "rmsidewinder@me.com", "RMSidewinder" %><br/>
+Weather icon on home page courtesy of <b>Wojciech Grzanka</b>&nbsp;<%= link_to "www.iconbest.com", "http://www.iconbest.com", :target => '_blank' %>
 
 </section>
 
