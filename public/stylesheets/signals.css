@@ -20,6 +20,12 @@ body {
 	background-image: url('../images/fibre_red.jpg');
 }
 
+p, li, a{ 
+	line-height:20px;
+	color:orange;
+	text-align:center;
+}
+
 /***********************************/
 /* rules for the header and footer */
 /***********************************/
@@ -43,11 +49,6 @@ header#page_header nav ul li, footer#page_footer nav ul li {
 	display:inline;
 }
 
-p, li, a{ 
-	line-height:20px;
-	color:orange;
-	text-align:center;
-}
 
 .drawbox {
 	border:4px solid #F00;
@@ -205,4 +206,11 @@ b {
 	width:75px;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+footer#page_footer { 
+	clear: both; 
+	width: 100%;
+	display: block;
+	text-align: center;
 }

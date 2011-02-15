@@ -20,7 +20,7 @@ body {
 	background-image: url('../images/fibre_red.jpg');
 }
 
-p, li,a, h1{ 
+p, li, a, h1{ 
 	line-height:20px;
 	color:orange;
 	text-align:center;

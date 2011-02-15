@@ -147,16 +147,36 @@ class SidewindersController < ApplicationController
     @css = 'signals.css'
   end
   
-  def sig_standing_yellow
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-    
   def sig_captflagger
     @title = 'Hand Signals'
     @css = 'signals.css'
   end
   
+  def sig_standing_yellow
+    @title = 'Hand Signals'
+    @css = 'signals.css'
+  end
+    
+  def sig_waving_yellow
+    @title = 'Hand Signals'
+    @css = 'signals.css'
+  end
+    
+  def sig_dbl_standing_yellow
+    @title = 'Hand Signals'
+    @css = 'signals.css'
+  end
+    
+  def sig_surface
+    @title = 'Hand Signals'
+    @css = 'signals.css'
+  end
+    
+  def sig_white
+    @title = 'Hand Signals'
+    @css = 'signals.css'
+  end
+    
   def sig_numbers
     @title = 'Hand Signals'
     @css = 'signals.css'
