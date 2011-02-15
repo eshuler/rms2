@@ -141,3 +141,68 @@ b {
 	font-size:10pt;
 }
 
+/*---------------------------------- */
+/* rules for the hand signal buttons */
+/*---------------------------------- */
+
+#handsigtable {
+	text-align:center;
+	background:#FFF;
+	/* border:1px solid red; */
+}
+
+#handsigtable table {
+	margin-left:auto;
+	margin-right:auto;
+	border-style:none;
+	border-collapse:collapse;
+	background:#FFF;
+	/* border:1px solid black; */
+}
+
+#handsigtable th, #handsigtable td p{
+	text-align:center;
+	background:#FFF;
+	color:#000;
+}
+
+#handsigtable img.outline {
+	text-align:center;
+	background:#FFF;
+	border:3px solid #F9BB3A;
+}
+
+.buttonbox {
+	display: inline;
+	float:left;
+	margin-left:70px;
+	height:70px;
+	margin-top:15px;
+	background-color:#0033CC;
+	background-image:none;
+}
+
+.handsigbuttons {
+	display: inline;
+	float: left;
+	background-color:#0033CC;
+	margin-right:15px;
+}
+
+.handsigbuttons a:link {
+	background-color:#0033CC;
+}
+
+.handsigbuttons img {
+	border:none;
+}
+
+.handsigbuttons a:visited {
+	background-color:#0033CC;
+}
+
+.backbutton{
+	width:75px;
+	margin-left:auto;
+	margin-right:auto;
+}

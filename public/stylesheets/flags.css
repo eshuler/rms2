@@ -67,7 +67,6 @@ p, li, a{
 	font-family:"trebuchet ms", verdana, sans-serif;
 }
 
-
 /******************************/
 /* rules for the flag buttons */
 /******************************/
@@ -134,6 +133,7 @@ section#info img {
 	display:inline;
 }
 
+
 b {
 	color:#000;
 	font-weight:bold;
@@ -146,6 +146,7 @@ span {
 	font-size:10pt;
 	border-bottom:1px dotted black;
 }
+
 
 /**
  ** http://www.opentip.org
