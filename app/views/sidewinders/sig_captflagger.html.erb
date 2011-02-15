@@ -1,0 +1,37 @@
+<%= render(:partial => 'header')-%>
+
+<%= render(:partial => 'signalbuttons') -%>
+
+<section id="info">
+	
+	<p class="linecenter">Hand signals between the Corner Captain and the Flagger</p>
+	<p class="linecenter">Example 1: The Corner Captain is away from the flag station and needs to advise the flagger of an incident.</p><br/>
+
+	<!-- place a 9 item table to hold images and text content -->
+	<div id="handsigtable">
+		<table>
+			<tr>
+				<th>Corner Captain</th><th> </th><th>Flagger</th>
+			</tr>
+			<tr>
+				<!-- the first image is the captain -->
+				<td><%= image_tag "cornercaptain.idraw.png" %> </td>
+				<!-- the second image is a spacer -->
+				<td><%= image_tag "spacer.idraw.gif" %></td>
+				<!-- the last image is the flagger -->
+				<td><%= image_tag "flaggerman.idraw.gif" %></td>
+			</tr>
+			<tr>
+				<td><%= link_to "Standing Yellow Flag", :action => "sig_standing_yellow" %><br/>
+					<a href="hscaptwaveyellow.html">Waving Yellow Flag</a><br/>
+					<a href="hscaptdblstandyellow.html">Double Standing Yellow Flag</a><br/>
+					<a href="hscaptsurface.html">Surface Flag</a><br/>
+					<a href="hscaptwhite.html">White Flag</a><br/>
+					</td><td> </td><td> </td>
+			</tr>
+		</table><br/>
+	</div><!-- handsigtable -->
+
+</section>
+
+<%= render(:partial => 'footer')-%>
