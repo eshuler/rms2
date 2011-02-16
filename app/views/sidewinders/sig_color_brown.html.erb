@@ -1,0 +1,33 @@
+<%= render(:partial => 'header')-%>
+
+<%= render(:partial => 'signalbuttons') -%>
+
+<section id="info">
+	<p class="linecenter">Hand signals for Colors</p>
+	<p class="linecenter">Example 1: These might be used as part of a phrase.</p><br/>
+		<!-- place a 9 item table to hold images and text content -->
+		<div id="handsigtable">
+			<table>
+				<tr>
+					<th></th><th>Worker</th><th></th>
+				</tr>
+				<tr>
+					<!-- the first image is the captain -->
+					<td><%= image_tag "spacer.idraw.gif" %></td>
+					<!-- the second image is a spacer -->
+						<td><%= image_tag "gncolorbrown.idraw.gif" %></td>
+					<!-- the last image is the flagger -->
+					<td><%= image_tag "spacer.idraw.gif" %></td>
+				</tr>
+				<tr><td></td>
+					<!-- this is col 2 row 2 of the table -->
+					<td><p>Brown</p>
+						<p>Pat your backside.</p><br/>
+					</td>
+				</tr>
+			</table><br/>
+		</div><!-- handsigtable -->
+		<p class="backbutton"><%= link_to( image_tag("signal_back.png"), "sig_colors") %></p>
+</section>
+
+<%= render(:partial => 'footer')-%>

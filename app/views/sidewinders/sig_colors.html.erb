@@ -3,7 +3,39 @@
 <%= render(:partial => 'signalbuttons') -%>
 
 <section id="info">
-<p>Color Signals page</p><br/>
+	<p class="linecenter">Hand signals for Colors</p>
+	<p class="linecenter">Example 1: These might be used as part of a phrase.</p><br/>
+
+	<!-- place a 9 item table to hold images and text content -->
+	<div id="handsigtable">
+		<table>
+			<tr>
+				<th></th><th>Worker</th><th></th>
+			</tr>
+			<tr>
+				<!-- the first image is the captain -->
+					<td><%= image_tag "spacer.idraw.gif" %></td>
+				<!-- the second image is a spacer -->
+				<td><%= image_tag "safetyman.idraw.gif" %></td>
+				<!-- the last image is the flagger -->
+				<td><%= image_tag "spacer.idraw.gif" %></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<%= link_to "Request for Color", "sig_color_request" %><br/>
+					<%= link_to "Black", "sig_color_black" %><br/>
+					<%= link_to "Blue", "sig_color_blue" %><br/>
+					<%= link_to "Red", "sig_color_red" %><br/>
+					<%= link_to "Green", "sig_color_green" %><br/>
+					<%= link_to "Yellow", "sig_color_yellow" %><br/>
+					<%= link_to "Brown", "sig_color_brown" %><br/>
+					<%= link_to "White", "sig_color_white" %>
+					</td>
+				<td></td>
+			</tr>
+		</table>
+	</div><!-- handsigtable -->
 </section>
 
 <%= render(:partial => 'footer')-%>

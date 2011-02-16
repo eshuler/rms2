@@ -323,6 +323,10 @@ class SidewindersController < ApplicationController
     @css = 'signals.css'
   end
   
+  def sig_color_request
+    @title = 'Hand Signals'
+    @css = 'signals.css'
+  end
   
   #--------------------------
   def sig_general
