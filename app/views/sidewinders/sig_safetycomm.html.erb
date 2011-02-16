@@ -3,7 +3,34 @@
 <%= render(:partial => 'signalbuttons') -%>
 
 <section id="info">
-<p>Safety - > Comm Signals page</p><br/>
+	<p class="linecenter">Hand signals between the Safety worker and the Communicator</p>
+	<p class="linecenter">Example 1: The Safety worker has responded to car stopped in your sector.</p><br/>
+
+	<!-- place a 9 item table to hold images and text content -->
+	<div id="handsigtable">
+		<table>
+			<tr>
+				<th>Communicator</th><th> </th><th>Safety Worker</th>
+			</tr>
+			<tr>
+				<td><%= image_tag "comm_man.idraw.gif" %></td>
+				<td><%= image_tag "spacer.idraw.gif" %></td>
+				<td><%= image_tag "safetyman.idraw.gif" %></td>
+			</tr>
+			<tr>
+				<td><p>What do you need?</p></td><td> </td><td>
+					<%= link_to "Send Ambulance", :action => 'sig_sc_ambulance' %><br/>
+					<%= link_to "Send Firetruck", :action => 'sig_sc_fire' %><br/>
+					<%= link_to "Send Flat tow", :action => 'sig_sc_flat_tow' %><br/>
+					<%= link_to "Send Wrecker", :action => 'sig_sc_wrecker' %><br/>
+					<%= link_to "Send Tilt bed", :action => 'sig_sc_tilt_bed' %><br/>
+					<%= link_to "Send Help", :action => 'sig_sc_send_help' %><br/>
+					<%= link_to "Send Lots of help", :action => 'sig_sc_send_lots_of_help' %><br/>
+					<%= link_to "SEND HELP NOW!", :action => 'sig_sc_send_now' %><br/>
+					</td>
+			</tr>
+		</table>
+	</div><!-- handsigtable -->
 </section>
 
 <%= render(:partial => 'footer')-%>

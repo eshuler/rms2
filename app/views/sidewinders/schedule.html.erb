@@ -5,11 +5,11 @@
 <section id="info">
 	<!-- create a box to hold the countdown info -->
 	<div id="countdowncontainer">
-		<div id="event"><%= @next_event.evname %> begins in:</div>
+		<div id="event"><%= h @next_event.evname %> begins in:</div>
 		<div id="clock1" class="digits"> </div>
 	</div>
 	<script type="text/javascript">
-	  Duration.countdown("clock1",Date.UTC(<%= @utc_date %>));
+	  Duration.countdown("clock1",Date.UTC(<%= h @utc_date %>));
 	</script>
 	
 	<!-- create a box to hold the schedule -->

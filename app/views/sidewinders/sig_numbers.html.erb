@@ -3,7 +3,39 @@
 <%= render(:partial => 'signalbuttons') -%>
 
 <section id="info">
-<p> Number Signals page</p><br/>
+	<p class="linecenter">Hand signals for Numbers</p>
+	<p class="linecenter">NOTE: Use 1 arm for the first digit, use your other arm for the second digit.</p><br/>
+
+	<!-- place a 9 item table to hold images and text content -->
+	<div id="handsigtable">
+		<table>
+			<tr>
+				<th></th><th>Worker</th><th></th>
+			</tr>
+			<tr>
+				<!-- the first image is the captain -->
+				<td><%= image_tag "spacer.idraw.gif" %></td>
+				<!-- the second image is a spacer -->
+				<td><%= image_tag "safetyman.idraw.gif" %></td>
+				<!-- the last image is the flagger -->
+				<td><%= image_tag "spacer.idraw.gif" %></td>
+			</tr>
+			<tr>
+				<!-- this is col 1 row 1 of the table (empty) -->
+				<td></td>
+				<!-- this is col 2 row 1 of the table -->
+				<td>
+					<%= link_to "Request for Number", :action => "sig_num_request" %><br/>
+					<%= link_to "One",:action=>"sig_num_one" %> <%= link_to "Two",:action=>"sig_num_two" %>  <%= link_to "Three",:action=>"sig_num_three" %><br/>
+					<%= link_to "Four",:action=>"sig_num_four" %> <%= link_to "Five",:action=>"sig_num_five" %> <%= link_to "Six", :action=>"sig_num_six" %><br/>
+					<%= link_to "Seven",:action=>"sig_num_seven" %> <%= link_to "Eight",:action=>"sig_num_eight" %> <%= link_to "Nine",:action=>"sig_num_nine" %><br/>
+					<%= link_to "Zero",:action=>"sig_num_zero" %><br/>
+					</td>
+					<!-- this is col 3 row 1 of the table (empty) -->
+					<td></td>
+			</tr>
+		</table><br/>
+	</div><!-- handsigtable -->
 </section>
 
 <%= render(:partial => 'footer')-%>

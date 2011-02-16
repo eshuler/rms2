@@ -18,7 +18,7 @@
 		<span id="clock1"> test </span>
 	</p>
 	<script type="text/javascript">
-	  Duration.countdown("clock1",Date.UTC(<%= @utc_date %>));
+	  Duration.countdown("clock1",Date.UTC(<%= h @utc_date %>));
 	</script>
 </section>
 
