@@ -1,0 +1,31 @@
+<%= render(:partial => 'header')-%>
+
+<%= render(:partial => 'signalbuttons') -%>
+
+<section id="info">
+	<p class="linecenter">Hand signals between the Safety worker and the Communicator</p>
+	<p class="linecenter">Example 1: The Safety worker has responded to car stopped in your sector.</p><br/>
+	<!-- place a 9 item table to hold images and text content -->
+	<div id="handsigtable">
+		<table>
+			<tr>
+				<th>Communicator</th><th> </th><th>Safety Worker</th>
+			</tr>
+			<tr>
+				<td><%= image_tag "comm_man.idraw.gif" %></td>
+				<td><%= image_tag "spacer.idraw.gif" %></td>
+				<td><%= image_tag "lotsofhelp.idraw.gif" %></td>
+			</tr>
+			<tr>
+				<td><p>"What do you need?"</p></td><td> </td><td>
+					<p>"Send Everything!"<br/>
+					Using both hands <br/>
+					pat your head</p>
+					</td>
+			</tr>
+		</table><br/>
+	</div><!-- handsigtable -->
+	<p class="backbutton"><%= link_to( image_tag("signal_back.png"), "sig_safetycomm") %></p>
+</section>
+
+<%= render(:partial => 'footer')-%>

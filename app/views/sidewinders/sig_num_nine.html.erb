@@ -1,0 +1,38 @@
+<%= render(:partial => 'header')-%>
+
+<%= render(:partial => 'signalbuttons') -%>
+
+<section id="info">
+	<p class="linecenter">Hand signals for Numbers</p>
+	<p class="linecenter">NOTE: Use 1 arm for the first digit, use your other arm for the second digit.</p><br/>
+		<!-- place a 9 item table to hold images and text content -->
+		<div id="handsigtable">
+			<table>
+				<tr>
+					<th></th><th>Worker</th><th></th>
+				</tr>
+				<tr>
+					<!-- the first image is the captain -->
+					<td><%= image_tag "spacer.idraw.gif" %></td>
+					<!-- the second image is a spacer -->
+					<td><%= image_tag "gnnumbernine.idraw.gif" %></td>
+					<!-- the last image is the flagger -->
+					<td><%= image_tag "spacer.idraw.gif" %></td>
+				</tr>
+				<tr>
+					<!-- this is col 1 row 2 of the table (empty) -->
+					<td></td>
+					<!-- this is col 2 row 2 of the table -->
+					<td><p>Number 9</p>
+						<p>Using your palm in<br/>
+						an exaggerated motion,<br/>
+						tap your wrist 3 times.</p></td>
+						<!-- this is col 3 row 2 of the table (empty) -->
+						<td></td>
+				</tr>
+			</table><br/>
+		</div><!-- handsigtable -->
+		<p class="backbutton"><%= link_to( image_tag("signal_back.png"), "sig_numbers") %></p>
+</section>
+
+<%= render(:partial => 'footer')-%>
