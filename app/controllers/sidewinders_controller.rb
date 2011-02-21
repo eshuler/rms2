@@ -334,66 +334,6 @@ class SidewindersController < ApplicationController
     @css = 'signals.css'
   end
   
-  def sig_gen_headphones
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-  
-  def sig_gen_check
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-
-  def sig_gen_flatwheel
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-
-  def sig_gen_dragging
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-
-  def sig_gen_smoking
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-  
-  def sig_gen_carsoncourse
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-  
-  def sig_gen_checkered
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-  
-  def sig_gen_front
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-
-  def sig_gen_rear
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-
-  def sig_gen_lastcar
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-
-  def sig_gen_halfway
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-
-  def sig_gen_more
-    @title = 'Hand Signals'
-    @css = 'signals.css'
-  end
-  
   #########################
   # other actions
   #########################

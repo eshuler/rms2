@@ -3,37 +3,7 @@
 <%= render(:partial => 'signalbuttons') -%>
 
 <section id="info">
-	<p class="linecenter">General Hand signals</p>
-	<p class="linecenter">Example 1: These might be used as part of a phrase.</p><br/>
-
-	<!-- place a 9 item table to hold images and text content -->
-	<div id="handsigtable">
-		<table>
-			<tr>
-				<th></th><th>Worker</th><th></th>
-			</tr>
-			<tr>
-				<!-- the first image is the captain -->
-				<td><%= image_tag "spacer.idraw.gif" %></td>
-				<!-- the second image is a spacer -->
-				<td><%= image_tag "safetyman.idraw.gif" %></td>
-				<!-- the last image is the flagger -->
-				<td><%= image_tag "spacer.idraw.gif" %></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>
-					<%= link_to "Check","sig_gen_check" %> <%= link_to "Headphones", "sig_gen_headphones" %><br/>
-					<%= link_to "Flat wheel", "sig_gen_flatwheel" %> <%= link_to "Dragging", "sig_gen_dragging" %>  <%= link_to "Smoking", "sig_gen_smoking" %><br/>
-					<%= link_to "Cars on course","sig_gen_carsoncourse" %> <%= link_to "Checkered flag", "sig_gen_checkered" %><br/>
-					<%= link_to "Front", "sig_gen_front" %> <%= link_to "Rear","sig_gen_rear" %><br/>
-					<%= link_to "Last car", "sig_gen_lastcar" %> <%= link_to "Half way", "sig_gen_halfway" %><br/>
-					<%= link_to "More..", "sig_gen_more" %></td>
-				<td></td>
-			</tr>
-		</table>
-	</div><!-- handsigtable -->
-
+<p> General Signals page</p><br/>
 </section>
 
 <%= render(:partial => 'footer')-%>
