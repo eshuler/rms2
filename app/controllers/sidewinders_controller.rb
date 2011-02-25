@@ -12,6 +12,18 @@ class SidewindersController < ApplicationController
     @css = 'sidewinder.css'
     @next_event = Event.find_next_event
     @utc_date = Event.next_utc_date
+    
+    case @next_event.evtrack
+    when "HPR"
+      @weather_page = "hpr_weather.html" 
+    when "PPIR"
+      @weather_page = "ppir_weather.html" 
+    when "LaJunta"
+      @weather_page = "laj_weather.html" 
+    when "PMP"
+      @weather_page = "pmp_weather.html"
+    end
+    
   end
   
   ##############################
