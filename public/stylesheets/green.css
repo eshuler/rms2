@@ -122,7 +122,7 @@ b {
 /* rules for the tablebox and table */
 /* -------------------------------- */
 #schedtable {
-	border:none;
+	border:collapse;
 	width:100%;
 }
 
