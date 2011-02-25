@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label 'Host Region' %><br />
-    <%= f.text_area :evhostreg, :rows => 1, :cols => 10%>
+		<%= f.select :evhostreg, [['COR'],['CDR'],['Utah'],['RGR'],['EIR'],['PAR']] %>
   </p>
   <p>
     <%= f.label 'Evenet Name' %><br />
@@ -21,7 +21,7 @@
   </p>
   <p>
     <%= f.label 'Track' %><br />
-    <%= f.text_area :evtrack , :rows => 1, :cols => 10%>
+		<%= f.select :evtrack, [['HPR'],['PPIR'],['PMP'],['MMP'],['LaJunta'],['MPH'],['Road America']] %>
   </p>
   <p>
     <%= f.label 'Flag Chief' %><br />
