@@ -44,7 +44,7 @@ header#page_header nav ul li, footer#page_footer nav ul li {
 }
 
 p, li, a{ 
-	line-height:15px;
+	line-height:20px;
 	color:orange;
 	text-align:center;
 }
@@ -66,6 +66,7 @@ p, li, a{
 	color:#000;
 	font-family:"trebuchet ms", verdana, sans-serif;
 }
+
 /******************************/
 /* rules for the speaker buttons */
 /******************************/
