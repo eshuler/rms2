@@ -13,7 +13,7 @@
 
 <section id="nextup">
 	<p>
-		<span id="weather"><%= link_to (image_tag('sun_therm.png', {:size => "40x40", :border=>0}), :action => 'weather', :popup => ['Weather', 'height=300, width=200']) %></span>
+		<span id="weather"><a href="<%= @weather_page %>" onclick="window.open(this.href, 'new_window_name','height=210,width=510');return false;"><%= image_tag('sun_therm.png', {:size => "40x40", :border=>0}) %></a></span>
 		<span id="eventname"><%= h @next_event.evname %> <span class="basictext">begins in:</span></span>
 		<span id="clock1"> test </span>
 	</p>
