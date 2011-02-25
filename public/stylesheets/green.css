@@ -114,7 +114,6 @@ b {
 	color:#000;
 }
 
-
 .digits{
 	font-size:28pt;
 }
@@ -123,7 +122,7 @@ b {
 /* rules for the tablebox and table */
 /* -------------------------------- */
 #schedtable {
-	border-spacing:0px;
+	border:none;
 	width:100%;
 }
 
