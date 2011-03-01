@@ -1,10 +1,18 @@
 <section id="flagbuttons">
 	<%= image_tag('alt_logo.png', {:class=>"alt_logo"} ) %>
 	<p>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'alert'}, {:title=>"Alert Call"}) %>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'wavingyellow'}, {:title=>"Waving Yellow"}) %>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'standingyellow'}, {:title=>"Standing Yellow"}) %>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'metaltometal'}, {:title=>"Metal to Metal!"}) %>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'passunderyellow'}, {:title=>"Pass under Yellow!"}) %>
+		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'alert'}, {:id=>"alert"}) %>
+		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'wavingyellow'}, {:id=>"wy"}) %>
+		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'standingyellow'}, {:id=>"sy"}) %>
+		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'metaltometal'}, {:id=>"mtm"}) %>
+		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'passunderyellow'}, {:id=>"puy"}) %>
 	</p>
+	
+	<script type="text/javascript">
+		$('alert').addTip('Alert call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('wy').addTip('Waving Yellow Call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('sy').addTip('Standing Yellow Call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('mtm').addTip('Metal to Metal Call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('puy').addTip('Pass under Yellow Call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+	</script>
 </section>

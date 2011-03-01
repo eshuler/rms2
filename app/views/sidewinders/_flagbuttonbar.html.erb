@@ -11,4 +11,17 @@
 		<%= link_to(image_tag('flags/fancy_redflag.png',:border=>0 ), {:action=>'flag_red'}, {:id=>"redflag"}) %>
 		<%= link_to(image_tag('flags/fancy_checkeredflag.png',:border=>0 ), {:action=>'flag_checkered'}, {:id=>"checkeredflag"}) %>
 	</p>
+	
+	<script type="text/javascript">
+		$('greenflag').addTip('Start of Session', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('yellowflag').addTip('Caution!', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('passingflag').addTip('Check your mirrors', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('evflag').addTip('Slow vehicle ahead', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('surfaceflag').addTip('Loss of traction possible', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('meatballflag').addTip('Go to the pits', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('blackflag').addTip('Go see the stewards', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('redflag').addTip('STOP NOW!', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('checkeredflag').addTip('End of Session', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+	</script>
+	
 </section>

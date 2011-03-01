@@ -8,12 +8,12 @@
 		<meta name="author" content="Ed Shuler"/>
 		<title><%= base_path %></title>
 		<%= stylesheet_link_tag(@css) %>
-		<%= javascript_include_tag 'prototype' %>
-		<%= javascript_include_tag 'scriptaculous' %>
-		<%= javascript_include_tag 'opentip' %>
-		<%= javascript_include_tag 'application' %>
-		<%= javascript_include_tag 'duration' %>
-		<%= javascript_include_tag 'lightbox' %>
+		<%= javascript_include_tag 'prototype', :cache => true %>
+		<%= javascript_include_tag 'scriptaculous', :cache => true %>
+		<%= javascript_include_tag 'opentip', :cache => true %>
+		<%= javascript_include_tag 'application', :cache => true %>
+		<%= javascript_include_tag 'duration', :cache => true %>
+		<%= javascript_include_tag 'lightbox', :cache => true %>
 		<%#= javascript_include_tag :all, :cache => true %>
 	
 		<!--[if lt IE 9]> 

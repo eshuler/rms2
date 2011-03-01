@@ -8,7 +8,19 @@
 			<li><%= link_to('Organization', {:action=>'organize'}, {:id=>"raceorgpage"}) %></li>
 			<li><%= link_to('Media', {:action=>'media'}, {:id=>"mediapage"}) %></li>
 			<li><%= link_to('Links', {:action=>'links'}, {:id=>"linkspage"}) %></li>
-			<li><%= link_to("Blog", "http://rmsidewinder.wordpress.com/") %></li>
+			<li><%= link_to("Blog", "http://rmsidewinder.wordpress.com/", :id=>"blogpage") %></li>
 		</ul>
 	</nav>
+	
+	<script type="text/javascript">
+		$('homepage').addTip('Start over', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('aboutpage').addTip('A little history', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('licpage').addTip('Licensing', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });	
+		$('schedpage').addTip('Lets go racing', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('raceorgpage').addTip('Who is in charge here?', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('mediapage').addTip('pics and such..', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('linkspage').addTip('Club info', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('blogpage').addTip('Chit chat', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+	</script>
+	
 </header>

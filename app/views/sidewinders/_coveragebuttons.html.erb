@@ -1,9 +1,16 @@
 <section id="flagbuttons">
 	<%= image_tag('alt_logo.png', {:class=>"alt_logo"} ) %>
 	<p>
-		<%= link_to(image_tag('tracks/hpr.png',:border=>0 ), {:action=>'track_hpr'}, {:title=>"High Plains Raceway"}) %>
-		<%= link_to(image_tag('tracks/ppir.png',:border=>0 ), {:action=>'track_ppir'}, {:title=>"Pikes Peak International Raceway"}) %>
-		<%= link_to(image_tag('tracks/lajunta.png',:border=>0 ), {:action=>'track_lajunta'}, {:title=>"LaJunta Raceway"}) %>
-		<%= link_to(image_tag('tracks/pmp.png',:border=>0 ), {:action=>'track_pmp'}, {:title=>"Pueblo Motorsports Park!"}) %>
+		<%= link_to(image_tag('tracks/hpr.png',:border=>0 ), {:action=>'track_hpr'}, {:id=>"hpr"}) %>
+		<%= link_to(image_tag('tracks/ppir.png',:border=>0 ), {:action=>'track_ppir'}, {:id=>"ppir"}) %>
+		<%= link_to(image_tag('tracks/lajunta.png',:border=>0 ), {:action=>'track_lajunta'}, {:id=>"lajr"}) %>
+		<%= link_to(image_tag('tracks/pmp.png',:border=>0 ), {:action=>'track_pmp'}, {:id=>"pmp"}) %>
 	</p>
+	
+	<script type="text/javascript">
+		$('hpr').addTip('High Plains Raceway', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('ppir').addTip('Pikes Peak International Raceway', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('lajr').addTip('La Junta Raceway', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });	
+		$('pmp').addTip('Pueblo Motorsports Park', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+	</script>
 </section>
