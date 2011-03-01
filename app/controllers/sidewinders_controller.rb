@@ -1,7 +1,7 @@
 class SidewindersController < ApplicationController
   
   caches_page :media, :about, :organize, :links, :advance,
-  :flagging, :flag_surface, :flag_white, :flag_meatball, :flag_black, :flag_green, :flag_red, :flag_checkered, :flag_passing
+  :flagging, :flag_surface, :flag_white, :flag_meatball, :flag_black, :flag_green, :flag_red, :flag_checkered, :flag_passing,
   :track_hpr, :track_pmp, :track_ppir, :track_lajunta
   
   ############################
