@@ -8,7 +8,13 @@
 		<meta name="author" content="Ed Shuler"/>
 		<title><%= base_path %></title>
 		<%= stylesheet_link_tag(@css) %>
-		<%= javascript_include_tag :all, :cache => true %>
+		<%= javascript_include_tag 'prototype' %>
+		<%= javascript_include_tag 'scriptaculous' %>
+		<%= javascript_include_tag 'opentip' %>
+		<%= javascript_include_tag 'application' %>
+		<%= javascript_include_tag 'duration' %>
+		<%= javascript_include_tag 'lightbox' %>
+		<%#= javascript_include_tag :all, :cache => true %>
 	
 		<!--[if lt IE 9]> 
 			<script type="text/javascript">
@@ -27,5 +33,4 @@
 		<%= yield %>
 		
 	</body>
-	
 </html>

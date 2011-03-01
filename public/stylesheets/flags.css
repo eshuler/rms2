@@ -234,15 +234,12 @@ span {
 	height: 160px;
 }
 
-
 .ot-container .left { left: 0; }
 .ot-container .center { left: 50%; }
 .ot-container .right { right: 0; }
 .ot-container .top { top: 0; }
 .ot-container .middle { top: 50%; }
 .ot-container .bottom { bottom: 0; }
-
-
 
 /**  Styles  **/
 
@@ -275,10 +272,11 @@ span {
 }
 
 .style-rounded .opentip {
-	border: 7px solid orange;
+	border: 4px solid orange;
 	/*border: 7px solid #81b4da;*/
-	background-color: #f9fbfc;
+	background-color: #562C04;
 	color: #3f5d73;
+	border-radius: 10px;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -414,9 +412,6 @@ span {
 }
 /**/
 
-
-
-
 /**
 
 CSS3 Transitions
@@ -427,9 +422,6 @@ transitions.
 
 So the syntax I'm going to use, is really meant for more modern browsers than
 IE6.
-
-
-
 To define a show effect, you have to define the position you want to come from
 as the .ot-completely-hidden property (in combination with your
 .ot-show-effectName).
@@ -438,7 +430,6 @@ To define a hide effect, you do the same, but for .ot-hidden (in combination
 with your .ot-show-effectName).
 
 **/
-
 
 .ot-container.ot-css3 {
   -webkit-transition-duration: 1s; /* Well be reset by JS */
@@ -455,17 +446,11 @@ with your .ot-show-effectName).
   display: none;
 }
 
-
-
-
-
 /** Appear / Fade**/
 .ot-container.ot-css3.ot-becoming-visible.ot-show-appear,
 .ot-container.ot-css3.ot-hidden.ot-hide-fade {
   opacity: 0;
 }
-
-
 
 /** Grow / Shrink **/
 .ot-container.ot-css3.ot-becoming-visible.ot-show-grow,
@@ -474,8 +459,6 @@ with your .ot-show-effectName).
   -moz-transform: scale(0);
   -o-transform: scale(0);
 }
-
-
 
 /** Blind/Slide down / Blind up**/
 .ot-container.ot-css3.ot-becoming-visible.ot-show-blindDown,
@@ -486,7 +469,6 @@ with your .ot-show-effectName).
   -o-transform: scaleY(0);
   opacity: 0;
 }
-
 
 /** Condense / Puff **/
 .ot-container.ot-css3.ot-becoming-visible.ot-show-condense,
@@ -511,18 +493,12 @@ with your .ot-show-effectName).
   opacity: 0;
 }
 
-
-
 /*
 
 .ot-container.ot-css3.ot-hidden.ot-show-condense { -webkit-transform: scale(5); }
 */
-
-
-
 /*
 .ot-container.ot-css3.ot-hidden.ot-hide-fade { }
-
 
 @-webkit-keyframes shrink {
 	0% { opacity: 1; -webkit-transform: scale(1); }
@@ -539,15 +515,9 @@ with your .ot-show-effectName).
 .ot-container.ot-css3.ot-hidden.ot-hide-blindUp { -webkit-animation-name: blindUp; }
 .ot-container.ot-css3.ot-hidden.ot-hide-slideUp { -webkit-animation-name: blindUp; }
 
-
 @-webkit-keyframes puff {
 	0% { opacity: 1; -webkit-transform: scale(1); }
 	100% { opacity: 0; -webkit-transform: scale(5); }
 }
 .ot-container.ot-css3.ot-hidden.ot-hide-puff { -webkit-animation-name: puff; }
-
-
 */
-
-
-

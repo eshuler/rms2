@@ -1,14 +1,14 @@
 <section id="flagbuttons">
 	<%= image_tag('alt_logo.png', {:class=>"alt_logo"} ) %>
 	<p>
-		<%= link_to(image_tag('flags/fancy_greenflag.png',:border=>0 ), {:action=>'flag_green'}, {:title=>"Start Session!"}) %>
-		<%= link_to(image_tag('flags/fancy_yellowflag.png',:border=>0 ), {:action=>'flag_yellow'}, {:title=>"Warning!"}) %>
-		<%= link_to(image_tag('flags/fancy_passingflag.png',:border=>0 ), {:action=>'flag_passing'}, {:title=>"Check your mirrors!"}) %>
-		<%= link_to(image_tag('flags/fancy_whiteflag.png',:border=>0 ), {:action=>'flag_white'}, {:title=>"Slow vehicle on course!"}) %>
-		<%= link_to(image_tag('flags/fancy_surfaceflag.png',:border=>0 ), {:action=>'flag_surface'}, {:title=>"Loss of traction possible!"}) %>
-		<%= link_to(image_tag('flags/fancy_mechanicalflag.png',:border=>0 ), {:action=>'flag_meatball'}, {:title=>"Go to the pits!"}) %>
-		<%= link_to(image_tag('flags/fancy_blackflag.png',:border=>0 ), {:action=>'flag_black'}, {:title=>"Go see the steward!"}) %>
-		<%= link_to(image_tag('flags/fancy_redflag.png',:border=>0 ), {:action=>'flag_red'}, {:title=>"STOP IMMEDIATELY!"}) %>
-		<%= link_to(image_tag('flags/fancy_checkeredflag.png',:border=>0 ), {:action=>'flag_checkered'}, {:title=>"End Session!"}) %>
+		<%= link_to(image_tag('flags/fancy_greenflag.png',:border=>0 ), {:action=>'flag_green'}, {:id=>"greenflag"}) %>
+		<%= link_to(image_tag('flags/fancy_yellowflag.png',:border=>0 ), {:action=>'flag_yellow'}, {:id=>"yellowflag"}) %>
+		<%= link_to(image_tag('flags/fancy_passingflag.png',:border=>0 ), {:action=>'flag_passing'}, {:id=>"passingflag"}) %>
+		<%= link_to(image_tag('flags/fancy_whiteflag.png',:border=>0 ), {:action=>'flag_white'}, {:id=>"evflag"}) %>
+		<%= link_to(image_tag('flags/fancy_surfaceflag.png',:border=>0 ), {:action=>'flag_surface'}, {:id=>"surfaceflag"}) %>
+		<%= link_to(image_tag('flags/fancy_mechanicalflag.png',:border=>0 ), {:action=>'flag_meatball'}, {:id=>"meatballflag"}) %>
+		<%= link_to(image_tag('flags/fancy_blackflag.png',:border=>0 ), {:action=>'flag_black'}, {:id=>"blackflag"}) %>
+		<%= link_to(image_tag('flags/fancy_redflag.png',:border=>0 ), {:action=>'flag_red'}, {:id=>"redflag"}) %>
+		<%= link_to(image_tag('flags/fancy_checkeredflag.png',:border=>0 ), {:action=>'flag_checkered'}, {:id=>"checkeredflag"}) %>
 	</p>
 </section>

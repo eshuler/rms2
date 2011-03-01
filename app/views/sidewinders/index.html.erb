@@ -4,22 +4,39 @@
 
 <section id="homepage">
 	<p>
-		<%= link_to(image_tag('flagger.png',:border=>0, :class=>'wide1'), {:action=>'flagging'}, {:title=>"Flagging"}) %>
-		<%= link_to(image_tag('communicator.png',:border=>0, :class=>'wide2'), {:action=>'comm'}, {:title=>"Communication"}) %>
-		<%= link_to(image_tag('coverage.png',:border=>0, :class=>'wide3'), {:action=>'coverage'}, {:title=>"Track Coverage"}) %>
-		<%= link_to(image_tag('signals.png',:border=>0, :class=>'wide2'), {:action=>'signals'}, {:title=>"Hand Signals"}) %>
+		<%= link_to(image_tag('flagger.png',:border=>0, :class=>'wide1'), {:action=>'flagging'}, {:id=>"mrflagger"}) %>
+		<%= link_to(image_tag('communicator.png',:border=>0, :class=>'wide2'), {:action=>'comm'}, {:id=>"mrcomm"}) %>
+		<%= link_to(image_tag('coverage.png',:border=>0, :class=>'wide3'), {:action=>'coverage'}, {:id=>"mrtrack"}) %>
+		<%= link_to(image_tag('signals.png',:border=>0, :class=>'wide2'), {:action=>'signals'}, {:id=>"mrsignal"}) %>
 	</p>
 </section>
 
 <section id="nextup">
 	<p>
-		<span id="weather"><a href="<%= @weather_page %>" onclick="window.open(this.href, 'new_window_name','height=230,width=530');return false;"><%= image_tag('sun_therm.png', {:size => "40x40", :border=>0}) %></a></span>
+		<span id="weather"><a href="<%= @weather_page %>" onclick="window.open(this.href, 'new_window_name','height=230,width=530');return false;">
+		<%= image_tag('sun_therm.png', {:size => "40x40", :border=>0}) %></a></span>
 		<span id="eventname"><%= h @next_event.evname %> <span class="basictext">begins in:</span></span>
 		<span id="clock1"> test </span>
 	</p>
 	<script type="text/javascript">
 	  Duration.countdown("clock1",Date.UTC(<%= h @utc_date %>));
+	</script>	
+
+	<script type="text/javascript">
+		$('mrflagger').addTip( 'Flagging', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded', showOn: 'mouseover', hideOn: 'mouseout', hidetrigger:'tip' });
+		$('mrcomm').addTip('Communication', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('mrtrack').addTip('Track Coverage', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('mrsignal').addTip('Hand Signals', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('weather').addTip('7 Day Weather forecast', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('homepage').addTip('Start over', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('aboutpage').addTip('A little history', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('licpage').addTip('Licensing', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });	
+		$('schedpage').addTip('Lets go racing', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('raceorgpage').addTip('Who is in charge here?', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('mediapage').addTip('pics and such..', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('linkspage').addTip('Club info', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
 	</script>
+	
 </section>
 
 <%= render(:partial => 'footer')-%>

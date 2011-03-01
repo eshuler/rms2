@@ -1063,7 +1063,7 @@ var TipClass = Class.create({
       }
     }
   },
-  ensureElementInterval: 1000, // In milliseconds, how often opentip should check for the existance of the element
+  ensureElementInterval: 500, // In milliseconds, how often opentip should check for the existance of the element
   ensureElement: function() { // Regularely checks if the element is still in the dom.
     this.deactivateElementEnsurance();
     if (!this.triggerElement.parentNode || !this.triggerElement.visible() || !this.triggerElement.descendantOf(document.body)) {this.deactivate();}

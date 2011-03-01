@@ -12,16 +12,31 @@ There are several hazards that might cause a need to delay or prematurely end a 
 
 <span class="atip" onmouseover="javascript:Tips.add(this, event, $('ttContent').innerHTML, {style: 'rounded'});">saltire</span>
 
-at the entrance to the pits can indicate that the pits are closed.&nbsp;&nbsp;Such a flag is used in both the IRL and NASCAR series. In NASCAR, a red flag with a black flag signals the end of a practice session.<br/><br/>
+at the entrance to the pits can indicate that the pits are closed.&nbsp;&nbsp;Such a flag is used in both the IRL and NASCAR series.&nbsp;&nbsp;In NASCAR, a red flag with a black flag signals the end of a practice session.<br/><br/>
 Source: 2003 SCCA F&amp;C Manual, http://en.wikipedia.org/wiki/Racing_flags
 
 <div id="ttContent" style="display:none">
-	<p><%= image_tag('flag_saltire.png') %><br />
+	<p><%= image_tag('flags/flag_saltire.png') %><br />
 		saltire |ˈsalˌtīr; ˈsôl-|
 		noun Heraldry
 		another term for St. Andrew's cross .
 		• [as adj. ] (of a design) incorporating a motif based on such a diagonal cross.</p>
 </div>
 </section>
+
+<script type="text/javascript">
+	$('mrflagger').addTip('Flagging', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('mrcomm').addTip('Communication', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('mrtrack').addTip('Track Coverage', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('mrsignal').addTip('Hand Signals', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('weather').addTip('7 Day Weather forecast', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('homepage').addTip('Start over', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('aboutpage').addTip('A little history', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('licpage').addTip('Licensing', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });	
+	$('schedpage').addTip('Lets go racing', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('raceorgpage').addTip('Who is in charge here?', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('mediapage').addTip('pics and such..', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	$('linkspage').addTip('Club info', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+</script>
 
 <%= render(:partial => 'footer')-%>
