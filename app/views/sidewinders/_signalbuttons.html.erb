@@ -1,10 +1,18 @@
 <section id="flagbuttons">
 	<%= image_tag('alt_logo.png', {:class=>"alt_logo"} ) %>
 	<p>
-		<%= link_to(image_tag('handsignals/signal_safetycomm.png',:border=>0 ), {:action=>'sig_safetycomm'}, {:title=>"Safety to Communicator Signals"}) %>
-		<%= link_to(image_tag('handsignals/signal_captflag.png',:border=>0 ), {:action=>'sig_captflagger'}, {:title=>"Signals from Captain to Flagger"}) %>
-		<%= link_to(image_tag('handsignals/signal_numbers.png',:border=>0 ), {:action=>'sig_numbers'}, {:title=>"Signals for Car Number"}) %>
-		<%= link_to(image_tag('handsignals/signal_colors.png',:border=>0 ), {:action=>'sig_colors'}, {:title=>"Signals for Car Color"}) %>
-		<%= link_to(image_tag('handsignals/signal_general.png',:border=>0 ), {:action=>'sig_general'}, {:title=>"Other Hand Signals"}) %>
+		<%= link_to(image_tag('handsignals/signal_safetycomm.png',:border=>0 ), {:action=>'sig_safetycomm'}, {:id=>"safecomm"}) %>
+		<%= link_to(image_tag('handsignals/signal_captflag.png',:border=>0 ), {:action=>'sig_captflagger'}, {:id=>"captflag"}) %>
+		<%= link_to(image_tag('handsignals/signal_numbers.png',:border=>0 ), {:action=>'sig_numbers'}, {:id=>"number"}) %>
+		<%= link_to(image_tag('handsignals/signal_colors.png',:border=>0 ), {:action=>'sig_colors'}, {:id=>"color"}) %>
+		<%= link_to(image_tag('handsignals/signal_general.png',:border=>0 ), {:action=>'sig_general'}, {:id=>"othersigs"}) %>
 	</p>
+	
+	<script type="text/javascript">
+		$('safecomm').addTip('Safety to Communicator Hand Signals', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('captflag').addTip('Captain to Flagger Hand Signals', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('number').addTip('Number Hand Signals', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('color').addTip('Color Hand Signals', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('othersigs').addTip('Other Hand signals', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+	</script>
 </section>

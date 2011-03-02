@@ -1,0 +1,10 @@
+Script started on Tue Mar  1 13:32:45 2011
+bash-3.2$ 
+bash-3.2$ qq
+bash: qq: command not found
+bash-3.2$ quit
+bash: quit: command not found
+bash-3.2$ exit
+exit
+
+Script done on Tue Mar  1 13:33:29 2011
