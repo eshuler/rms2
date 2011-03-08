@@ -1,18 +1,52 @@
-<section id="flagbuttons">
+<section id="commbuttons">
 	<%= image_tag('alt_logo.png', {:class=>"alt_logo"} ) %>
-	<p>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'alert'}, {:id=>"alert"}) %>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'wavingyellow'}, {:id=>"wy"}) %>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'standingyellow'}, {:id=>"sy"}) %>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'metaltometal'}, {:id=>"mtm"}) %>
-		<%= link_to(image_tag('speaker.png',:border=>0 ), {:action=>'passunderyellow'}, {:id=>"puy"}) %>
-	</p>
+	
+	<table id="audiotable">
+		<tr>
+			<td>Alert Call</td>
+			<td>Standing Yellow Call</td>
+		<tr>
+			<td>
+				<audio id="alr" controls="controls" class="audio" preload="auto">
+				<source src="/images/audio/standingyellowalert.ogg" type="audio/ogg">
+				<source src='/images/audio/standingyellowalert.mp3' type="audio/mpeg">
+				No browser support for audio!
+				</audio>
+			</td>
+			<td>
+				<audio id="sy" controls="controls" class="audio" preload="auto">
+					<source src='/images/audio/standingyellowalert.ogg' type="audio/ogg">
+					<source src='/images/audio/standingyellowalert.mp3' type="audio/mpeg">
+					No browser support for audio!
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td>Waving Yellow Call</td>
+			<td>No Flag Call</td>
+		<tr>
+		<tr>
+			<td>
+			<audio id="wy" controls="controls" class="audio" preload="auto">
+				<source src='/images/audio/standingyellowalert.ogg' type="audio/ogg">
+				<source src='/images/audio/standingyellowalert.mp3' type="audio/mpeg">
+				No browser support for audio!
+			</audio>
+			</td>
+			<td>
+				<audio id="sur" controls="controls" class="audio" preload="auto">
+					<source src='/images/audio/standingyellowalert.ogg' type="audio/ogg">
+					<source src='/images/audio/standingyellowalert.mp3' type="audio/mpeg">
+					No browser support for audio!
+				</audio>
+			</td>
+		<tr>
+	</table>
 	
 	<script type="text/javascript">
-		$('alert').addTip('Alert call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
-		$('wy').addTip('Waving Yellow Call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
-		$('sy').addTip('Standing Yellow Call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
-		$('mtm').addTip('Metal to Metal Call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
-		$('puy').addTip('Pass under Yellow Call', { tipJoint: [ 'center', 'top' ] , style: 'rounded' });
+		$('alr').addTip('Alert call', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('wy').addTip('Waving Yellow Call', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('sy').addTip('Standing Yellow Call', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('sur').addTip('No Flag Call', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
 	</script>
 </section>

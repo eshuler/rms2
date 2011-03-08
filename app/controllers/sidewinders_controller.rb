@@ -2,7 +2,8 @@ class SidewindersController < ApplicationController
   
   caches_page :media, :about, :organize, :links, :advance,
   :flagging, :flag_surface, :flag_white, :flag_meatball, :flag_black, :flag_green, :flag_red, :flag_checkered, :flag_passing,
-  :track_hpr, :track_pmp, :track_ppir, :track_lajunta
+  :track_hpr, :track_pmp, :track_ppir, :track_lajunta,
+  :comm
   
   ############################
   # this is the default action
@@ -23,7 +24,6 @@ class SidewindersController < ApplicationController
     when "PMP"
       @weather_page = "pmp_weather.html"
     end
-    
   end
   
   ##############################

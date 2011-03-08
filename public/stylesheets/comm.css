@@ -70,19 +70,20 @@ p, li, a{
 /******************************/
 /* rules for the speaker buttons */
 /******************************/
-section#flagbuttons {
+section#commbuttons {
 	display:block;
-	margin-top:55px;
+	margin-top:15px;
 }
 
-section#flagbuttons p{
-	width:80%;
-	height:150px;
+section#commbuttons p{
+	width:75%;
+	height:96px;
 	margin-left:30px;
+	text-align:left;
 }
 
-section#flagbuttons img{
-	margin-right:15px;
+section#commbuttons p .audio {
+	margin:30px 0px 0px 40px ;
 }
 
 .alt_logo {
@@ -90,6 +91,24 @@ section#flagbuttons img{
 	top:35px;
 	left:850px;
 	float:right;
+}
+
+/* -------------------------------- */
+/* rules for the tablebox and table */
+/* -------------------------------- */
+#audiotable {
+	border-style:hidden;
+	border-collapse:collapse;
+	width:70%;
+	margin-left:10%;
+	margin-bottom:26px;
+}
+
+#audiotable td {
+	padding:10px;
+	text-align:center;
+	font-size:10pt;
+	color:orange;
 }
 
 /******************************/
