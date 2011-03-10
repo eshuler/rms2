@@ -25,7 +25,7 @@ class Event < ActiveRecord::Base
     #construct the utc date format
     #pass it back
     puts d
-    d = y.to_s + "," + (m -1).to_s + "," + d.to_s + ",00,00,00"
+    d = y.to_s + "," + (m -1).to_s + "," + d.to_s + ",13,00,00"
   end
     
     validates_presence_of :evdate, :evname, :evhostreg, :evtrack
