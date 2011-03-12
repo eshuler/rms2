@@ -1,3 +1,2 @@
 module SidewindersHelper
-  
 end
