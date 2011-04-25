@@ -2,15 +2,6 @@
 
 <%= render(:partial => 'mainlogo') -%>
 
-<section id="homepage">
-	<p>
-		<%= link_to(image_tag('flagger.png',:border=>0, :class=>'wide1'), {:action=>'flagging'}, {:id=>"mrflagger"}) %>
-		<%= link_to(image_tag('communicator.png',:border=>0, :class=>'wide2'), {:action=>'comm'}, {:id=>"mrcomm"}) %>
-		<%= link_to(image_tag('coverage.png',:border=>0, :class=>'wide3'), {:action=>'coverage'}, {:id=>"mrtrack"}) %>
-		<%= link_to(image_tag('signals.png',:border=>0, :class=>'wide2'), {:action=>'signals'}, {:id=>"mrsignal"}) %>
-	</p>
-</section>
-
 <section id="nextup">
 	<p>
 		<span id="weather"><a href="<%= @weather_page %>" onclick="window.open(this.href, 'new_window_name','height=230,width=530');return false;">
@@ -21,7 +12,16 @@
 	<script type="text/javascript">
 	  Duration.countdown("clock1",Date.UTC(<%= h @utc_date %>));
 	</script>	
+</section>
 
+<section id="homepage">
+	<p>
+		<%= link_to(image_tag('flagger.png',:border=>0, :class=>'wide1'), {:action=>'flagging'}, {:id=>"mrflagger"}) %>
+		<%= link_to(image_tag('communicator.png',:border=>0, :class=>'wide2'), {:action=>'comm'}, {:id=>"mrcomm"}) %>
+		<%= link_to(image_tag('coverage.png',:border=>0, :class=>'wide3'), {:action=>'coverage'}, {:id=>"mrtrack"}) %>
+		<%= link_to(image_tag('signals.png',:border=>0, :class=>'wide2'), {:action=>'signals'}, {:id=>"mrsignal"}) %>
+	</p>
+	
 	<script type="text/javascript">
 		$('mrflagger').addTip( 'Flagging', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded', showOn: 'mouseover', hideOn: 'mouseout', hidetrigger:'tip' });
 		$('mrcomm').addTip('Communication', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
@@ -29,7 +29,6 @@
 		$('mrsignal').addTip('Hand Signals', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
 		$('weather').addTip('7 Day Weather forecast', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
 	</script>
-	
 </section>
 
 <%= render(:partial => 'footer')-%>
