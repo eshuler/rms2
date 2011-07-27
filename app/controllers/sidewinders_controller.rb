@@ -27,7 +27,7 @@ class SidewindersController < ApplicationController
       @weather_page = "mph_weather.html"
     when "Sandia"
       @weather_page = "sandia_weather.html"
-    when "Road America"
+    when "MMP"
       @weather_page = "mmp_weather.html"
     when "Road America"
       @weather_page = "roadamerica_weather.html"
