@@ -3,11 +3,13 @@
 <%= render(:partial => 'mainlogo') -%>
 
 <section id="info">
+	
 	<!-- create a box to hold the countdown info -->
 	<div id="countdowncontainer">
 		<div id="event"><%= h @next_event.evname %> begins in:</div>
 		<div id="clock1" class="digits"> </div>
 	</div>
+	
 	<script type="text/javascript">
 	  Duration.countdown("clock1",Date.UTC(<%= h @utc_date %>));
 	</script>
@@ -28,9 +30,10 @@
 					<td><%= h event.evtrack %></td>
 					<td><%= h event.evchief %></td>
 				</tr>
-			<% end %>
+			<% end -%>
 		</table>
 	</div> <!-- tablebox -->
+	
 	<div id="abbreviations">
 		CDR - Continental Divide Region (Colorado Springs area)<br/>
 		COR - Colorado Region (Denver area)<br/>
@@ -40,6 +43,7 @@
 		PAR - Pan Am Region (El Paso TX area)<br/>
 		** - Super Tour event!
 	</div>
+	
 </section>
 
 <%= render(:partial => 'footer') -%>
